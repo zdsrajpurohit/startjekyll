@@ -1473,7 +1473,6 @@ a {
 
 a:focus,
 a:hover {
-  color: #23527c;
   text-decoration: none;
 }
 
@@ -5311,7 +5310,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   margin: 7.5px -15px;
   overflow-x: hidden;
   float: right;
-  color: white;    
+  color: white;
   background-color: #000;
 }
 
@@ -5524,12 +5523,12 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-   color: #0085a1;
+   color: #FFC040;
    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a {
-  color: #6ec54d;
+  color: #FFC040;
   background-color: transparent;
 }
 

@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://zdsrajpurohit.github.io/startjekyll/gallery/"
-  - JOURNAL: "https://zdsrajpurohit.github.io/startjekyll/journal/"
-  - ABOUT: "https://zdsrajpurohit.github.io/startjekyll/about/"
+  - GALLERY: "/startjekyll/gallery/"
+  - JOURNAL: "/startjekyll/journal/"
+  - ABOUT: "/startjekyll/about/"
 
 # All translation keys
 translations:

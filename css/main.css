@@ -1,12 +1,10 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #eee;
-  background-color: #000;
+  font-size: 14px;
+  color: #333;
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
 }
 p a {
   text-decoration: none;
@@ -18,23 +16,20 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
 }
 a {
-  color: #760824;
+  color: #FFC040;
   transition: color .4s;
   text-decorarion: none;
 }
 a:hover,
 a:focus {
-  color: #fff;
      transition: color .3s;
     outline: none;
     text-shadow:none;
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
   outline: none;
 }
 blockquote {
@@ -48,12 +43,12 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background-color: transparent;
+  background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -61,29 +56,23 @@ hr.small {
 .navbar-custom .nav li a {
   color: white;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
-  .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-  }
   .navbar-custom .navbar-brand {
     color: white;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #0085a1;
+    color: #FFC040;
   }
   .navbar-custom .nav li a {
     color: white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover{
-    color: #0085a1;
+    color: #FFC040;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -113,14 +102,14 @@ hr.small {
     color: #ffffff;
   }
   .navbar-custom.is-fixed .navbar-brand:hover {
-    color: #0085a1;
+    color: #FFC040;
   }
-  
+
   .navbar-custom.is-fixed .nav li a:hover {
-    color: #0085a1;
+    color: #FFC040;
   }
 .navbar-custom.is-fixed .nav li a:active{
-    color: #6ec54d;
+    color: #FFC040;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -139,21 +128,20 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  height: 400px
 }
+.post-heading {
+  margin-bottom: 30px
+}
+
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
-}
+
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
@@ -182,7 +170,7 @@ hr.small {
   }
 }
 .intro-header .post-heading h1 {
-  font-size: 35px;
+  font-size: 24px;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {
@@ -207,51 +195,49 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
-    font-size: 55px;
   }
   .intro-header .post-heading .subheading {
-    font-size: 30px;
     text-shadow: 1px 1px 4px #000;
   }
 }
-.post-preview > a {
+.post-preview {
+  color: #e0e0e0
+}
+.post-preview a {
   color: #f5f5f5;
 }
-.post-preview > a:hover,
-.post-preview > a:focus {
+.post-preview a:hover,
+.post-preview a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #FFC040;
 }
-.post-preview > a > .post-title {
-  font-size: 30px;
+.post-preview a .post-title {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.post-preview > a > .post-subtitle {
+.post-preview a .post-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
+.post-preview .post-meta {
+  color: #a0a0a0;
   font-style: italic;
   margin-top: 0;
 }
-.post-preview > .post-meta > a {
+.post-preview .post-meta a {
   text-decoration: none;
   color: #404040;
 }
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
-  color: #0085a1;
+.post-preview .post-meta a:hover,
+.post-preview .post-meta a:focus {
+  color: #FFC040;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
+.post-footer {
+  padding: 20px 30px
 }
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -268,7 +254,8 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  margin: -30px 0 0px;
+  background: #000;
+  padding: 30px 0;
 }
 footer .list-inline {
   margin: 0;
@@ -324,7 +311,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #FFC040;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -344,8 +331,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #FFC040;
+  border: 1px solid #FFC040;
   color: white;
 }
 .pager {
@@ -360,6 +347,7 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   padding: 10px 5px;
   background-color: black;
+  color: #fff
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
@@ -370,7 +358,7 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
+  color: #FFC040;
   background-color: black;
   }
 .pager .disabled > a,
@@ -384,12 +372,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #FFC040;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #FFC040;
 }
 img::selection {
   color: white;
@@ -400,9 +388,8 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #FFC040;
 }
 .fa-stack-2x {
  color: black;
 }
-
