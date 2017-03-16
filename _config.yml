@@ -1,7 +1,7 @@
 # Site settings
-title: PHOTORAMA
-email: ""
-description: "Photo Journal"
+title: Shakti Rajpurohit
+email: "shakti@shakti.xyz"
+description: "Personal Website"
 url: "https://zdsrajpurohit.github.io"
 baseurl: "/startjekyll"
 facebook_username: ""
@@ -15,17 +15,16 @@ share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name: Shakti Rajpurohit
   avatar: avatar.png
   favicon: favicon.ico
-  info: photography website template
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
 # Set 'provider' to false to turn commenting off globally.
 #Set 'provider: false' to disable comments globally.
 # Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
-#
+
 comments :
   provider : disqus
   disqus :
@@ -43,8 +42,8 @@ translations:
   permalink: "/404.html"
 
 # Server
-destination:      	 ./_site
-port:             	 4000
+destination: ./_site
+port: 4000
 
 
 # Build settings
