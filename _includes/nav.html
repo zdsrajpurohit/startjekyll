@@ -1,0 +1,11 @@
+<ul>
+  {% for nav_hash in site.nav %}
+    {% for nav_item in nav_hash %}
+      {% if page.active == nav_item[0] %}
+        <li class="active"><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+      {% else %}
+        <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
