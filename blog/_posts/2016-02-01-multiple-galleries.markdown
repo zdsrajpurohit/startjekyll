@@ -1,11 +1,11 @@
 ---
 layout: "default"
-title: "Many Journals"
-subtitle: "Hi this is a journal post"
-active: "Posts"
+title: "Multiple Galleries"
+subtitle: "A post with multiple galleries arranged with ISOTOPE"
+active: "Blog"
 image:
   feature: "pc007.jpg"
-date: "2017-02-01"
+date: "2016-02-01"
 ---
 
 

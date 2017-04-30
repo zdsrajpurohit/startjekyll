@@ -37,6 +37,19 @@ ul {
 	margin: 0
 }
 
+img {
+	width: 100%;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+	color: #337ab7;
+	margin: 0 0 10px 0
+}
+
+.container {
+	width: 700px
+}
+
 a:hover, a:active {
 	text-decoration: none;
 }
@@ -52,14 +65,25 @@ a:hover, a:active {
 }
 
 // Nav
-nav {
-	padding: 0 0 30px 0;
+.header {
+	padding: 30px 0;
 	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+  justify-content: space-between;
+	align-items: center;
+}
+
+.header h2 {
+	margin-bottom: 0
 }
 
 .nav>li>a.active {
   text-decoration: none;
   background-color: #eee;
+}
+
+.nav-pills>li>a {
+	text-transform: uppercase;
 }
 
 // Main content
@@ -71,4 +95,13 @@ nav {
 footer {
 	padding: 30px 0;
 	border-top: 1px solid #e5e5e5;
+}
+
+// Project page
+.project-items {
+	margin-bottom: 20px
+}
+
+.project-items:last-child {
+	margin-bottom: 0
 }
