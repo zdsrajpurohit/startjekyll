@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "Many Journals"
+title: "Multiple Journals"
 subtitle: "Hi this is a journal post"
 active: "Projects"
 image:

@@ -7,11 +7,10 @@ image:
   feature: "/gallery/projects/project01/bg1.jpg"
 date: "2016-02-01"
 ---
-
-
 <section>
 	<div>
 		<h3>{{page.title}}</h3>
+    <img src="{{ page.image.feature }}">
     <p>Content of your post HERE </p>
     <p>Add as many paragraphs amongst your galleries as you want.</p>
   </div>
