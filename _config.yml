@@ -1,72 +1,17 @@
 # Site settings
 title: Shakti Rajpurohit
-email: "shakti@shakti.xyz"
-description: "Personal Website"
-url: "https://zdsrajpurohit.github.io"
-baseurl: "/startjekyll"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
-share: true
+shortTitle: SR
+tagline: "Changing the world, one uninspired quote at a time"
+url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
-# Owner/author information
-owner:
-  name: Shakti Rajpurohit
-  avatar: avatar.png
-  favicon: favicon.ico
-
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
-# Set 'provider' to false to turn commenting off globally.
-#Set 'provider: false' to disable comments globally.
-# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
-
-comments :
-  provider : disqus
-  disqus :
-    short_name : ""
+# Contact
+phone: "" # This is my real number. You should text me.
+email: "" # This is my real email address. Please don't email me.
 
 # Internal nav
 nav:
-  - GALLERY: "/startjekyll/gallery/"
-  - JOURNAL: "/startjekyll/journal/"
-  - ABOUT: "/startjekyll/about/"
+  # - Blog: "/blog/"
+  - Projects: "/projects/"
+  # - About: "/about/"
 
-# All translation keys
-translations:
- # 404.html
-  permalink: "/404.html"
-
-# Server
-destination: ./_site
-port: 4000
-
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-paginate_path: "/journal/page:num/"
-permalink: "/journal/:title/"
-categories_path: "/journal/category/"
-tags_path: "/journal/tag/"
-gems:
- - jekyll-paginate
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-# SiteMap
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/writing/"
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
